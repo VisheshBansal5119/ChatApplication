@@ -4,7 +4,7 @@
 // import { Server } from "socket.io";
 
 // const io = new Server();
-const io = require('socket.io')(8080,{
+const io = require('socket.io')(process.env.PORT || 8080,{
     cors:{
         origin: "*",
         methods: ["GET","POST"]
